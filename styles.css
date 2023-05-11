@@ -1,7 +1,9 @@
 :root {
 	--primary: lightgreen;
 	--secondary: skyblue;
-	--section-height: 24rem
+	--section-height: 18rem;
+	--lr-padding: 6rem;
+	--max-width: 75rem;
 }
 
 body {
@@ -21,18 +23,9 @@ h2 {
 
 section {
 	/* margin-bottom: 2rem; */
-	padding: 2rem;
+	padding: var(--lr-padding);
 	min-height: var(--section-height);
-}
-
-/* #hi {
-	padding-top: 8rem;
-	padding-bottom: 8rem;
-} */
-
-.container {
-	margin: 0;
-	padding: 0 4rem;
+	max-width: var(--max-width);
 }
 
 button {
@@ -49,14 +42,32 @@ button a {
 	color: var(--primary);
 }
 
+#navbar {
+	min-height: default;
+}
+
 .headerbg {
 	background-color: var(--secondary);
+	display: flex;
+	justify-content: center;
+}
+
+#header {
+	background-color: pink;
+	padding: var(--lr-padding);
+	width: var(--max-width);
+}
+
+#introbg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: gray;
 }
 
 #intro {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+	background: pink;
+	width: var(--max-width);
 }
 
 .aboutbg {
