@@ -1,7 +1,6 @@
 :root {
 	--primary: lightgreen;
 	--secondary: skyblue;
-	--section-height: 18rem;
 	--lr-padding: 6rem;
 	--max-width: 75rem;
 }
@@ -24,7 +23,6 @@ h2 {
 section {
 	/* margin-bottom: 2rem; */
 	padding: var(--lr-padding);
-	min-height: var(--section-height);
 	max-width: var(--max-width);
 }
 
@@ -62,13 +60,11 @@ button a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: gray;
+	/* background-color: gray; */
 }
 
-#intro {
-	background: pink;
-	width: var(--max-width);
-}
+/* #intro {
+} */
 
 .aboutbg {
 	background-color: var(--primary);
