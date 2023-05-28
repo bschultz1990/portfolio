@@ -161,6 +161,14 @@ button a {
   font-size: 1.25rem;
 }
 
+span a {
+  text-decoration: none;
+  color: inherit;
+}
+
+span a:hover {
+  color: var(--accent)
+}
 
 /* HEADER */
 #header {
